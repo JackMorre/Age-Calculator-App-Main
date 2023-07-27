@@ -37,7 +37,7 @@ button.addEventListener("click", () => {
 	const currentDate = new Date();
 
 	const currentYear = currentDate.getFullYear();
-	const currentMonth = currentDate.getMonth();
+	const currentMonth = currentDate.getMonth() + 1;
 	const currentDay = currentDate.getDate();
 
 	let years = Number(currentYear - year.value);

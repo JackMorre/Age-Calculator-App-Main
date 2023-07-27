@@ -48,13 +48,17 @@
 			input[type="number"] {
 				appearance: textfield; /* Firefox */
 			}
+
+			.custom-rc {
+				border-radius: 20px 20px 120px 20px;
+			}
 		</style>
 	</head>
 	<body class="bg-neutral-200 h-screen flex justify-center items-center">
-		<main class="bg-white mx-4 rounded-3xl p-5">
+		<main class="bg-white mx-4 p-5 md:p-8 md:w-3/5 custom-rc">
 			<form
 				action=""
-				class="flex relative gap-2 mt-6 pb-14 border-b border-gray-400/50"
+				class="flex relative gap-2 mt-6 md:mt-0 pb-14 border-b border-gray-400/50 md:pr-20 md:mr-8 md:pb-8"
 			>
 				<div class="flex flex-col w-1/3 gap-1">
 					<label
@@ -108,7 +112,7 @@
 				<br />
 				<a
 					href="#"
-					class="btn absolute bg-violet-600 rounded-full top-[50%] left-[50%] translate-x-[-55%] translate-y-[60%] group hover:bg-black transition-all"
+					class="btn absolute bg-violet-600 rounded-full top-[50%] left-[50%] md:left-[80%] translate-x-[-55%] md:translate-x-[100%] translate-y-[60%] md:translate-y-[35%] group hover:bg-black transition-all"
 				>
 					<img
 						src="/assets/images/icon-arrow.svg"
@@ -116,7 +120,9 @@
 						class="w-6 h-6 m-4 group-hover:stroke-white"
 				/></a>
 			</form>
-			<div class="mt-14 font-extrabold italic text-5xl mb-6">
+			<div
+				class="mt-14 font-extrabold italic text-5xl mb-6 md:mt-6 md:text-6xl md:mb-0"
+			>
 				<h1 class="text-black">
 					<span class="years text-violet-600 mr-2">38</span>years
 				</h1>
